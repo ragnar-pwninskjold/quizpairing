@@ -19,18 +19,17 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <div class="container question">
-    <h2>Dummy quesiton #1 about cooking</h2>
-   	<div class="btn-group-vertical" role="group" aria-label="...">	
-		<button type="button" class="btn btn-default"><span>Answer 1</span></button>
-		<button type="button" class="btn btn-default"><span>Answer 2</span></button>
-		<button type="button" class="btn btn-default"><span>Answer 3</span></button>
-		<button type="button" class="btn btn-default"><span>Answer 4</span></button>
-		<button type="button" class="btn btn-default"><span>Answer 5</span></button>
-		<button type="button" class="btn btn-default"><span>Submit</span></button>
-   	</div>
-	</div>
-	<div class="result-container">
+    <div class="container quiz">
+      <h2 class="quiz__question"></h2>
+     	<div class="btn-group-vertical" role="group" aria-label="...">
+    		<button type="button" class="quiz__answer btn btn-default" id="0" data-value="0"></button>
+    		<button type="button" class="quiz__answer btn btn-default" id="1" data-value="1"></button>
+    		<button type="button" class="quiz__answer btn btn-default" id="2" data-value="2"></button>
+    		<button type="button" class="quiz__answer btn btn-default" id="3" data-value="3"></button>
+    		<button type="button" class="quiz__answer btn btn-primary" id="submit__button">Submit</button>
+     	</div>
+	  </div>
+	<div class="container result-container">
 		<h3>Right or Wrong</h3>
 	</div>
 
@@ -38,5 +37,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src='./index.js'></script>
   </body>
 </html>
